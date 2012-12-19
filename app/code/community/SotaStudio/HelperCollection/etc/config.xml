@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<config>
+
+	<modules>
+		<SotaStudio_HelperCollection>
+			<version>1.0.0</version>
+		</SotaStudio_HelperCollection>
+	</modules>
+
+	<global>
+		<helpers>
+			<helper_collection>
+				<class>SotaStudio_HelperCollection_Helper</class>
+			</helper_collection>
+		</helpers>
+	</global>
+
+</config>
