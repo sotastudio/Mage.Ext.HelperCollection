@@ -1,8 +1,8 @@
-# Category Ad
+# HelperCollection
 
 ## What does it do?
 
-The module adds an attribute to Magento's catalog categories called **category_ad** of input type **image**.
+The module makes some Helper globally accessible, which is very useful for Module Development within Magento.
 
 ## How to use?
 
