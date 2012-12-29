@@ -1,4 +1,4 @@
-# HelperCollection
+# Helper Collection
 
 ## What does it do?
 
