@@ -38,10 +38,10 @@ class SotaStudio_HelperCollection_Helper_Date extends Mage_Core_Helper_Abstract
 	 * @param mixed  $date  The desired date to evaluate.
 	 * @return bool
 	 */
-	protected function isValidDate($date)
+	public function isValidDate($date)
 	{
 		$date = $this->getArrayFromDate($date);
-		return ( checkdate($date['m'], $date['d'], $date['y']) ) ? true : false;
+		return ( checkdate($date['m'], $date['d'], $date['y']) && (int)$date['y'] !== 70) ? true : false;
 	}
 
 	/**
@@ -52,7 +52,7 @@ class SotaStudio_HelperCollection_Helper_Date extends Mage_Core_Helper_Abstract
 	 * @param string  $date  The given date as string.
 	 * @return array  The generated Array from date.
 	 */
-	protected function getArrayFromDate($date)
+	public function getArrayFromDate($date)
 	{
 		$date = strtotime($date);
 		$dateArray = array(
