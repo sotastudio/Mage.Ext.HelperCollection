@@ -62,4 +62,18 @@ class SotaStudio_HelperCollection_Helper_Date extends Mage_Core_Helper_Abstract
 		);
 		return $dateArray;
 	}
+
+	/**
+	 * Performs date operations, like adding and subtracting.
+	 *
+	 * @param string  $date  The time
+	 * @param string  $action  Math op to perform, like '-5 year'
+	 * @param string  $format  Output format
+	 * @return string  The result
+	 */
+	public function calcDate($date, $action, $format = 'Y-m-d')
+	{
+		$date = strtotime($action, strtotime($date));
+		return date($format, $date);
+	}
 }
