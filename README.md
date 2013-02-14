@@ -4,6 +4,7 @@
 
 The module makes some Helper globally accessible, which is very useful for Module Development within Magento.
 
+
 ## How to use?
 
 You can access the helper stuff within your Templates via
@@ -13,3 +14,12 @@ You can access the helper stuff within your Templates via
 or from elsewhere via
 
 	Mage::helper('helper_collection/classname');
+
+For example
+
+	Mage::helper('helper_collection/content');
+
+
+## Dependencies
+
+None.
